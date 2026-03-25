@@ -1,37 +1,99 @@
+
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2 {
+    color: white;
+    margin: 0;
 }
 
 .calculator {
-    width: 200px;
+    width: 222px;
 }
 
 #input {
     overflow: hidden;
     text-align: right;
-    font-size: 30px;
+    font-size: 42px;
+    font-weight: 400;
     box-sizing: border-box;
     width: 100%;
     border: 1px solid black;
-    padding: 0 10px;
+    padding: 0 7px;
+    color: white;
 }
 
 button {
+    all: unset;
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+    height: 50px;
     font-size: 30px;
-    margin: 10px;
-    margin-left: 0;
+    border: 1px solid rgba(255, 255, 255, 0.211);
+    width: 50px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.calculator {
+    margin: 30px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.211);
+    border-radius: 50px;
 }
 
 .calcBtns {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 330px;
+    border-radius: 50px;
+    flex: 1;
+    gap: 5  px;
 }
 
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.digit, #btnPlusMinus {
+    background-color: rgb(40, 40, 40);
+}
+
+.operator, #btnEqual {
+    background-color: rgb(255, 137, 10)
+}
+
+#btnDel, #btnC, #btnDot {
+    background-color: rgb(79, 79, 79);
+}
+
+#btnEqual {
+    width: 105px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.digit:hover, #btnPlusMinus:hover {
+    background-color:rgb(55, 55, 55)
+}
+
+.operator:hover, #btnEqual:hover {
+    background-color: rgb(255, 152, 42)
+}
+
+#btnDel:hover, #btnC:hover, #btnDot:hover {
+    background-color: rgb(97, 97, 97);
 }
