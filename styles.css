@@ -1,4 +1,5 @@
-
+* {
+}
 
 body {
     display: flex;
@@ -13,10 +14,12 @@ body {
 h1, h2 {
     color: white;
     margin: 0;
+    text-align: center;
 }
 
 .calculator {
     width: 222px;
+    transform: scale(1.2);
 }
 
 #input {
@@ -45,7 +48,7 @@ button {
 }
 
 .calculator {
-    margin: 30px;
+    margin: 60px;
     padding: 18px;
     border: 1px solid rgba(255, 255, 255, 0.211);
     border-radius: 50px;
@@ -60,7 +63,7 @@ button {
     height: 330px;
     border-radius: 50px;
     flex: 1;
-    gap: 5  px;
+    gap: 5px;
 }
 
 .row {
@@ -96,4 +99,22 @@ button {
 
 #btnDel:hover, #btnC:hover, #btnDot:hover {
     background-color: rgb(97, 97, 97);
+}
+
+footer {
+    display: flex;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.211); 
+}
+
+p {
+    font-weight: 100;
+    font-size: 15px;
 }

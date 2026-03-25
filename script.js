@@ -78,7 +78,7 @@ btnEqual.addEventListener("click", () => {
     if (justCalculated) {
         return
     } else if (firstOperand === null || operator === null) {
-        display.textContent = "Invalid input"  
+        display.textContent = "Error"  
         setTimeout(() => {
             resetCalculator() 
         }, 1500)
